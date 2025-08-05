@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Muktinath Travel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/animate.css">
+  
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+  
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+   <div class="container">
+     <a class="navbar-brand" href="homepage.php">Muktinath<span>Travel Agency</span></a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="oi oi-menu"></span> Menu
+     </button>
+
+     <div class="collapse navbar-collapse" id="ftco-nav">
+       <ul class="navbar-nav ml-auto">
+         <li class="nav-item"><a href="homepage.php" class="nav-link">Home</a></li>
+         <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+         <li class="nav-item"><a href="destination.html" class="nav-link">Destination</a></li>
+         <li class="nav-item active"><a href="hotel.html" class="nav-link">Hotel</a></li>
+         <li class="nav-item"><a href="guide.html" class="nav-link">Guide</a></li>
+					<li class="nav-item"><a href="adventure.html" class="nav-link">Adventures</a></li>
+         <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+         <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+       </ul>
+     </div>
+   </div>
+ </nav>
+ <!-- END nav -->
+ 
+ <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_1.jpg');">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+      <div class="col-md-9 ftco-animate pb-5 text-center">
+       <p class="breadcrumbs"><span class="mr-2"><a href="homepage.php">Home <i class="fa fa-chevron-right"></i></a></span> <span>Hotel <i class="fa fa-chevron-right"></i></span></p>
+       <h1 class="mb-0 bread">Hotel</h1>
+     </div>
+   </div>
+ </div>
+</section>
+
+<!--search starts-->
+
+   <!-- Search Form Section -->
+<section class="ftco-section ftco-no-pb">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="search-wrap-1 ftco-animate">
+          <form onsubmit="searchHotels(event)" class="search-property-1">
+            <div class="row no-gutters">
+              <div class="col-lg d-flex">
+                <div class="form-group p-4 border-0">
+                  <label for="destinationSelect">Hotel </label>
+                  <div class="form-field">
+                    <div class="icon"><span class="fa fa-map-marker"></span></div>
+                    <select id="destinationSelect" class="form-control">
+                      <option value="">Select destination</option>
+                       <option value="pokhara">Pokhara</option>
+                      <option value="kathmandu">Kathmandu</option>
+                      <option value="chitwan">Chitwan</option>
+                      <option value="mustang">Mustang</option>
+                      <option value="manang">Manang</option>
+                      <option value="bandipur">Bandipur</option>
+                      <option value="lumbini">lumbini</option>
+                      
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg d-flex">
+                <div class="form-group p-4">
+                  <label for="checkin">Check-in date</label>
+                  <div class="form-field">
+                    <div class="icon"><span class="fa fa-calendar"></span></div>
+                    <input type="date" id="checkin" class="form-control">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg d-flex">
+                <div class="form-group p-4">
+                  <label for="checkout">Check-out date</label>
+                  <div class="form-field">
+                    <div class="icon"><span class="fa fa-calendar"></span></div>
+                    <input type="date" id="checkout" class="form-control">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg d-flex">
+                <div class="form-group p-4">
+                  <label for="searchText">Search Hotel</label>
+                  <input type="text" id="searchText" oninput="searchHotels(event)" class="form-control" placeholder="Enter hotel name">
+                </div>
+              </div>
+
+              <div class="col-lg d-flex">
+                <div class="form-group d-flex w-100 border-0">
+                  <div class="form-field w-100 align-items-center d-flex">
+                    <input type="submit" value="Search" class="align-self-stretch form-control btn btn-primary">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hotel Listings Section -->
+<div class="container my-5" id="hotelList">
+  <div class="row">
+
+    <div class="col-md-4 hotel-card" data-location="pokhara" data-name="pokhara" >
+      <div class="card mb-4">
+        <img src="images/hotel lake pokhara.jpeg" class="card-img-top" alt="Hotel pokhara">
+        <div class="card-body">
+          <h5 class="card-title"> Hotel Pokhara Lake Himalayan</h5>
+          <p>RS 3500 per night with lunch</p>
+           <a href="https://book.stripe.com/test_14A4gzgy3dqBcF9crM4AU01" 
+           onclick="checkoutWithStripe()"
+           style="display: inline-block; background-color: #28a745; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+          Book Now
+        </a>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-md-4 hotel-card" data-location="pokhara" data-name="pokhara">
+      <div class="card mb-4">
+        <img src="images/hotel grand pokhara.jpeg" class="card-img-top" alt="Hotel pokhara">
+        <div class="card-body">
+          <h5 class="card-title"> Hotel Grande Pokhara</h5>
+          <p>RS 5000 per night with lunch</p>
+           <a href="https://book.stripe.com/test_14A4gzgy3dqBcF9crM4AU01" 
+           onclick="checkoutWithStripe()"
+           style="display: inline-block; background-color: #28a745; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+          Book Now
+        </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 hotel-card" data-location="kathmandu" data-name="kathmandu" >
+      <div class="card mb-4">
+        <img src="images/hotel raddison kathmandu.jpeg" class="card-img-top" alt="Hotel kathmandu">
+        <div class="card-body">
+          <h5 class="card-title"> Hotel Raddison Kathmandu</h5>
+         <p>RS 4000 per night with lunch</p>
+          <a href="https://book.stripe.com/test_14A4gzgy3dqBcF9crM4AU01" 
+           onclick="checkoutWithStripe()"
+           style="display: inline-block; background-color: #28a745; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+          Book Now
+        </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 hotel-card" data-location="chitwan" data-name="chitwan" >
+      <div class="card mb-4">
+        <img src="images/hotel chitwan resort.jpeg" class="card-img-top" alt="Hotel chitwan">
+        <div class="card-body">
+          <h5 class="card-title"> Sauraha Resort</h5>
+           <p>RS 2000 per night with lunch</p>
+            <a href="https://book.stripe.com/test_14A4gzgy3dqBcF9crM4AU01" 
+           onclick="checkoutWithStripe()"
+           style="display: inline-block; background-color: #28a745; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+          Book Now
+        </a>
+        </div>
+      </div>
+    </div>
+
+  
+
+
+    <div class="col-md-4 hotel-card" data-location="manang" data-name="manang" >
+      <div class="card mb-4">
+        <img src="images/hotel manang.jpeg" class="card-img-top" alt="Hotel manang">
+        <div class="card-body">
+          <h5 class="card-title"> Hotel Grande Pokhara</h5>
+          <p>Rs 3000 per day with lunch </p>
+                  <a href="https://book.stripe.com/test_14A4gzgy3dqBcF9crM4AU01" 
+           onclick="checkoutWithStripe()"
+           style="display: inline-block; background-color: #28a745; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+          Book Now
+        </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 hotel-card" data-location="lumbini" data-name="lumbini" data-rating="4">
+      <div class="card mb-4">
+        <img src="images/hotel lumbini.jpeg" class="card-img-top" alt="Hotel lumbini">
+        <div class="card-body">
+          <h5 class="card-title"> lumbini Resort</h5>
+          <p> Rs 1500 per day</p>
+                  <a href="https://book.stripe.com/test_14A4gzgy3dqBcF9crM4AU01" 
+           onclick="checkoutWithStripe()"
+           style="display: inline-block; background-color: #28a745; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+          Book Now
+        </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 hotel-card" data-location="bandipur" data-name="bandipur" >
+      <div class="card mb-4">
+        <img src="images/hotel bandipur.jpeg" class="card-img-top" alt="Hotel bandipur">
+        <div class="card-body">
+          <h5 class="card-title"> Hotel Bandipur</h5>
+          <p>Rs 3500 Package 2 days with lunch and dinner </p>
+                  <a href="https://book.stripe.com/test_14A4gzgy3dqBcF9crM4AU01" 
+           onclick="checkoutWithStripe()"
+           style="display: inline-block; background-color: #28a745; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+          Book Now
+        </a>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-md-4 hotel-card" data-location="mustang" data-name="mustang" >
+      <div class="card mb-4">
+        <img src="images/hotel mustang.jpeg" class="card-img-top" alt="Hotel mustang">
+        <div class="card-body">
+          <h5 class="card-title"> Hotel Mustang</h5>
+          <p>Rs 2000 per day with breakfast and lunch</p>
+                  <a href="https://book.stripe.com/test_14A4gzgy3dqBcF9crM4AU01" 
+           onclick="checkoutWithStripe()"
+           style="display: inline-block; background-color: #28a745; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+          Book Now
+        </a>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+   
+
+  </div>
+</div>
+
+
+  <!--hotels ends-->
+
+ 
+
+
+
+
+ 
+
+  <!--advertise starts-->
+
+<section class="ftco-intro ftco-section ftco-no-pt">
+ <div class="container">
+  <div class="row justify-content-center">
+   <div class="col-md-12 text-center">
+    <div class="img"  style="background-image: url(images/bg_2.jpg);">
+     <div class="overlay"></div>
+     <h2>Muktinath Travel Agency</h2>
+     <p>We help for your hotel booking.</p>
+     <p class="mb-0"><a href="contact.html" class="btn btn-primary px-4 py-3">Contact Us</a></p>
+   </div>
+ </div>
+</div>
+</div>
+</section>
+
+  <!--advertise ends-->
+
+<footer class="ftco-footer bg-bottom ftco-no-pt" style="background-image: url(images/fotterimg.png);">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md pt-5">
+        <div class="ftco-footer-widget pt-md-5 mb-4">
+          <h2 class="ftco-heading-2">About</h2>
+          <p>Your trusted partner for unforgettable journeys, offering curated tours, expert guides, and seamless travel experiences across Nepal and beyond.</p>
+          <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+            <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+          </ul>
+        </div>
+      </div>
+     
+    
+    <div class="col-md pt-5 border-left">
+      <div class="ftco-footer-widget pt-md-5 mb-4">
+       <h2 class="ftco-heading-2">Have a Questions?</h2>
+       <div class="block-23 mb-3">
+         <ul>
+           <li><span class="icon fa fa-map-marker"></span><span class="text">Pokhara, Kaski</span></li>
+           <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+9779844923738</span></a></li>
+           <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">muktinathtravelagnecy@gmail.com</span></a></li>
+         </ul>
+       </div>
+     </div>
+   </div>
+ </div>
+ <div class="row">
+  <div class="col-md-12 text-center">
+
+    <p>
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="http://brisab.com.np" target="_blank">Brishab Chalise</a>
+     </p>
+    </div>
+  </div>
+</div>
+</footer>
+
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+
+<script>
+function searchHotels(event) {
+  if (event) event.preventDefault();
+
+  const selectedLocation = document.getElementById('destinationSelect').value.toLowerCase();
+  const checkinDate = document.getElementById('checkin').value;
+  const checkoutDate = document.getElementById('checkout').value;
+  const searchText = document.getElementById('searchText').value.toLowerCase();
+
+  const cards = document.querySelectorAll('.hotel-card');
+
+  cards.forEach(card => {
+    const location = card.getAttribute('data-location').toLowerCase();
+    const name = card.getAttribute('data-name').toLowerCase();
+
+    const matchesLocation = !selectedLocation || location === selectedLocation;
+    const matchesName = !searchText || name.includes(searchText);
+    const hasDate = checkinDate && checkoutDate;
+
+    if (matchesLocation && matchesName && (!hasDate || (checkinDate && checkoutDate))) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="js/google-map.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

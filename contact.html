@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Muktinath Travel</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/animate.css">
+  
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+  
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/bg_1.jpg') center/cover no-repeat;
+      padding: 100px 0;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .contact-section {
+      padding: 60px 0;
+    }
+
+    .contact-form {
+      background: white;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .contact-form input, .contact-form textarea {
+      border-radius: 6px;
+    }
+
+    .info-box {
+      background: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid #0077b6;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      border-radius: 6px;
+    }
+
+    .info-box i {
+      font-size: 24px;
+      color: #0077b6;
+      margin-right: 15px;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 40px;
+      text-align: center;
+      background: #0077b6;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+   <div class="container">
+     <a class="navbar-brand" href="homepage.php">Muktinath<span>Travel Agency</span></a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="oi oi-menu"></span> Menu
+     </button>
+
+     <div class="collapse navbar-collapse" id="ftco-nav">
+       <ul class="navbar-nav ml-auto">
+         <li class="nav-item"><a href="homepage.php" class="nav-link">Home</a></li>
+         <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+         <li class="nav-item"><a href="destination.html" class="nav-link">Destination</a></li>
+         <li class="nav-item"><a href="hotel.html" class="nav-link">Hotel</a></li>
+         <li class="nav-item"><a href="guide.html" class="nav-link">Guide</a></li>
+					<li class="nav-item"><a href="adventure.html" class="nav-link">Adventures</a></li>
+         <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+         <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
+       </ul>
+     </div>
+   </div>
+ </nav>
+ <!-- END nav -->
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      
+      <p>We'd love to hear from you. Send us your questions or booking requests!</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Contact Form -->
+      <div class="col-md-6 mb-4">
+        <form id="contactForm" action="https://formsubmit.co/muktinathtravelagency@gmail.com" method="POST" class="needs-validation" novalidate>
+          <h4 class="mb-4">Send a Message</h4>
+
+          <!-- Anti-spam protection -->
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_captcha" value="false">
+
+          <!-- Floating Labels -->
+          <div class="form-floating mb-3">
+            <input type="text" name="name" class="form-control" id="floatingName" placeholder="Your Name" required>
+            <label for="floatingName"></label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" name="email" class="form-control" id="floatingEmail" placeholder="Your Email" required>
+            <label for="floatingEmail"></label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" name="subject" class="form-control" id="floatingSubject" placeholder="Subject" required>
+            <label for="floatingSubject"></label>
+          </div>
+          <div class="form-floating mb-4">
+            <textarea name="message" class="form-control" placeholder="Your Message" id="floatingMessage" style="height: 150px;" required></textarea>
+            <label for="floatingMessage"></label>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100" id="submitBtn">
+            <span class="spinner-border spinner-border-sm me-2 d-none" role="status" aria-hidden="true" id="loadingSpinner"></span>
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+        <div class="col-md-6">
+          <div class="info-box d-flex align-items-center">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h6>Our Address</h6>
+              <p>Newroad,Pokhara-8,kaski</p>
+            </div>
+          </div>
+          <div class="info-box d-flex align-items-center">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h6>Call Us</h6>
+              <p><a href="tel:+9779844923738">9844923738</a></p>
+            </div>
+          </div>
+          <div class="info-box d-flex align-items-center">
+            <i class="fas fa-paper-plane"></i>
+            <div>
+              <h6>Email Us</h6>
+              <p><a href="mailto:muktinathtravelagency@gmail.com">muktinathtravelagency@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="info-box d-flex align-items-center">
+            <i class="fas fa-globe"></i>
+            <div>
+              <h6>Website</h6>
+              <p><a href="https://brishab7.github.io/semester/">www.muktinathtour.com.np</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+  </div>
+
+  <!-- Toasts -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
+    <!-- Success Toast -->
+    <div id="successToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="5000">
+      <div class="d-flex">
+        <div class="toast-body">
+          🎉 Your message was sent successfully!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+
+    <!-- Error Toast -->
+    <div id="errorToast" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="5000">
+      <div class="d-flex">
+        <div class="toast-body">
+          ❌ Something went wrong. Please try again.
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+
+  
+</section>
+
+       
+
+       
+
+     
+
+
+ <footer class="ftco-footer bg-bottom ftco-no-pt" style="background-image: url(images/fotterimg.png);">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md pt-5">
+        <div class="ftco-footer-widget pt-md-5 mb-4">
+          <h2 class="ftco-heading-2">About</h2>
+          <p>Your trusted partner for unforgettable journeys, offering curated tours, expert guides, and seamless travel experiences across Nepal and beyond.</p>
+          <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+            <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+          </ul>
+        </div>
+      </div>
+     
+    
+    <div class="col-md pt-5 border-left">
+      <div class="ftco-footer-widget pt-md-5 mb-4">
+       <h2 class="ftco-heading-2">Have a Questions?</h2>
+       <div class="block-23 mb-3">
+         <ul>
+           <li><span class="icon fa fa-map-marker"></span><span class="text">Pokhara, Kaski</span></li>
+           <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+9779844923738</span></a></li>
+           <li><a href="mailto:muktinathtravelagency@gmail.com"><span class="icon fa fa-paper-plane"></span><span class="text">muktinathtravelagency@gmail.com</span></a></li>
+         </ul>
+       </div>
+     </div>
+   </div>
+ </div>
+ <div class="row">
+  <div class="col-md-12 text-center">
+
+    <p>
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="http://brisab.com.np" target="_blank">Brishab Chalise</a>
+     </p>
+    </div>
+  </div>
+</div>
+</footer>
+
+
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="js/google-map.js"></script>
+<script src="js/main.js"></script>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const form = document.getElementById("contactForm");
+  const submitBtn = document.getElementById("submitBtn");
+  const spinner = document.getElementById("loadingSpinner");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Show spinner
+    spinner.classList.remove("d-none");
+    submitBtn.disabled = true;
+
+    // Submit to FormSubmit
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      spinner.classList.add("d-none");
+      submitBtn.disabled = false;
+
+      if (response.ok) {
+        const toast = new bootstrap.Toast(document.getElementById("successToast"));
+        toast.show();
+        form.reset();
+      } else {
+        const toast = new bootstrap.Toast(document.getElementById("errorToast"));
+        toast.show();
+      }
+    }).catch(error => {
+      spinner.classList.add("d-none");
+      submitBtn.disabled = false;
+      const toast = new bootstrap.Toast(document.getElementById("errorToast"));
+      toast.show();
+    });
+  });
+</script>
+
+
+</body>
+</html>
